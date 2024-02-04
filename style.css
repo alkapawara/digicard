@@ -76,7 +76,7 @@ p {
 }
 .card-profile {
     /* position: absolute; */
-    width: 140px;
+    width: 130px;
     height: 165px;
     bottom: -110px;
     left: 7px;
@@ -306,7 +306,13 @@ i:hover {
     font-size: 14px;
 }
 
+.d-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
 
+}
 @media screen and (max-width: 576px) {
     .card {
         padding: 0px;
@@ -383,5 +389,20 @@ i:hover {
         width: 80px;
         right: 12px;
         top: 5px;
+    }
+
+    .card-main {
+        width: 100%;
+        background: #f9f9f9;
+        border-radius: 0px;
+        text-align: center;
+        /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); */
+        box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.4);
+        user-select: none;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        background-color: #F6F6F6;
+        /* height: 300px; */
+        border-bottom: 5px solid #284480;
     }
   }
