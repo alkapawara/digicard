@@ -363,7 +363,7 @@ i:hover {
         color: #fff;
         bottom: 0;
         position: absolute;
-        left: 41%;
+        left: 44%;
         /* font-size: 1.42rem; */
         left: 40%;
         font-size: 1.42rem;
@@ -371,10 +371,10 @@ i:hover {
     }
     .icons {
         width: 90%;
-        margin: 16px auto 0px;
-        display: flex;
-        justify-content: space-between;
-        color: #284480;
+    margin: 23px auto 0px;
+    display: flex;
+    justify-content: space-between;
+    color: #284480;
     }
 
     img.card-logo {
