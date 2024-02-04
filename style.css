@@ -71,7 +71,7 @@ p {
     background: url(img/sample.png);
     background-size: cover;
     height: 80px;
-    border-radius: 0px 0px 40px 40px;
+    border-radius: 0px 0px 18px 18px;
     background: #284480;
 }
 .card-profile {
@@ -399,10 +399,20 @@ i:hover {
         /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); */
         box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.4);
         user-select: none;
-        margin-top: 10px;
+        margin-top: 0px;
         margin-bottom: 15px;
         background-color: #F6F6F6;
         /* height: 300px; */
         border-bottom: 5px solid #284480;
+    }
+
+    .card-cover-photo {
+        position: relative;
+        /* background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample74.jpg); */
+        background: url(img/sample.png);
+        background-size: cover;
+        height: 84px;
+        border-radius: 0px 0px 18px 18px;
+        background: #284480;
     }
   }
