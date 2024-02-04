@@ -415,4 +415,7 @@ i:hover {
         border-radius: 0px 0px 18px 18px;
         background: #284480;
     }
+    .section-card{
+        padding: 12px;
+    }
   }
