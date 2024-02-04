@@ -313,6 +313,70 @@ i:hover {
     align-items: start;
 
 }
+
+section.form-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    border-top: 3px solid #284480fa;
+    border-bottom: 3px solid #2b4781;
+    background: #2944803b;
+    box-shadow: 0px -1px 12px 1px #2b4781;
+}
+.form-box{
+        width: 100%;
+        padding: 12px;
+   
+}
+.sum-btn{
+    background-color: #284480;
+    color: #fff;
+}
+.form-input{
+    margin-bottom: 16px;
+}
+.client-det{
+    text-align: center;
+    font-size: 29px;
+    text-transform: capitalize;
+    padding-bottom: 6px;
+    background: #2b4781;
+    color: #fefefe;
+    margin-bottom: 28px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 900;
+}
+img.form-logo {
+    margin: auto;
+    width: 104px;
+    height: 60px;
+    display: flex;
+}
+
+.form-box {
+    width: 100%;
+    padding: 65px 12px 12px 10px;
+    grid-column: 2;
+    width: 480px;
+}
+.left-form {
+    height: 100vh;
+    background: #2b4781;
+    grid-column: 1;
+    width: 200px;
+}
+section.form-section {
+    display: grid;
+    justify-content: start;
+    align-items: start;
+    width: 700px;
+    grid-template-columns: 1fr 1fr;
+    border-top: 3px solid #284480fa;
+    border-bottom: 3px solid #2b4781;
+    background: #2944803b;
+    box-shadow: 0px -1px 12px 1px #2b4781;
+}
 @media screen and (max-width: 576px) {
     .card {
         padding: 0px;
@@ -421,5 +485,40 @@ i:hover {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    }
+    section.form-section {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+        grid-template-columns: 1fr;
+        border-top: 3px solid #284480fa;
+        border-bottom: 3px solid #2b4781;
+        background: #2944803b;
+        box-shadow: 0px -1px 12px 1px #2b4781;
+        flex-direction: column;
+    }
+    .left-form {
+        height: 100%;
+        background: #2b4781;
+        grid-column: 1;
+        width: 100%;
+    }
+    .form-box {
+        width: 100%;
+        padding: 19px 12px 12px 10px;
+        grid-column: 2;
+        /* width: 480px; */
+    }
+    .client-det {
+        text-align: center;
+        font-size: 29px;
+        text-transform: capitalize;
+        padding-bottom: 6px;
+        background: #2b4781;
+        color: #fefefe;
+        margin-bottom: 10px;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 900;
     }
   }
