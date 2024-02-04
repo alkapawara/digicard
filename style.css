@@ -288,3 +288,29 @@ i:hover {
 .dash_img {
     width: 80px;
 }
+
+@media screen and (max-width: 576px) {
+    .card {
+        padding: 15px;
+        width: 100%;
+        background: #f9f9f9;
+        border-radius: 0px;
+        text-align: center;
+        /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); */
+        box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.4);
+        user-select: none;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        background-color: #F6F6F6;
+        border-bottom: none;
+    }
+    .hd {
+        background-color: #284480;
+        color: #fff;
+        border-radius: 6px;
+        margin: 26px 0px 12px 0px;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 800;
+        font-size: 1.25rem;
+    }
+  }
