@@ -158,7 +158,8 @@ p.cc-para {
 img.card-logo {
     position: absolute;
     height: 32px;
-    width: 48px;
+    /* width: 48px; */
+    width: 80px;
     right: 12px;
     top: 12px;
 }
@@ -206,7 +207,7 @@ img.card-logo {
 
 .icons {
     width: 90%;
-    margin: 16px auto 10px;
+    margin: 16px auto 0px;
     display: flex;
     justify-content: space-between;
     color: #284480;
