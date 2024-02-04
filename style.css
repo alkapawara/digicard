@@ -291,7 +291,7 @@ i:hover {
 
 @media screen and (max-width: 576px) {
     .card {
-        padding: 15px;
+        padding: 0px;
         width: 100%;
         background: #f9f9f9;
         border-radius: 0px;
