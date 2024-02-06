@@ -377,6 +377,11 @@ section.form-section {
     background: #2944803b;
     box-shadow: 0px -1px 12px 1px #2b4781;
 }
+.btn:hover{
+color: #fff;
+background-color: #28448087;
+
+}
 @media screen and (max-width: 576px) {
     .card {
         padding: 0px;
