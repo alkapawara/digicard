@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+    <title>Diabetes Day</title>
+    <style>
+      body {
+         padding: 0;
+         box-sizing: border-box;
+         margin: 0;
+          background-color: transparent;
+         height: 100vh;
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         gap: 20px;
+     }
+
+
+       </style>
+  </head>
+
+  <body>
+</html>
+<div class="frame-main" id="downloadframe">
+  <div class="frame2" >
+    <img src="./frm5/1.png" class="frame-bg-main"/>
+    <img src="./frm5/2.png" class="fr5"/>
+    <img src="./frm5/3.png" class="fr51"/>
+    <div class="circul-box-fr5">
+        <div class="circul-subox-fr5">
+            <img src="./frm2/dr.jpg">
+        </div>
+        </div>
+    <div class="fr5-title">
+        <h3>Dr. <span>Raaz Jayseval</span></h3>
+        <span>M.B.B.s</span>
+    </div>
+    
+    
+    </div>
+</div>
+<button id="download" class="btn btn-primary"> Download</button>
+<!-- <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js">
+  
+</script> -->
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+  setUpDownloadPageAsImage();
+
+  function setUpDownloadPageAsImage() {
+    document.getElementById("download").addEventListener("click", function () {
+      html2canvas(document.querySelector("#downloadframe")).then(function (canvas) {
+        console.log(canvas);
+        simulateDownloadImageClick(canvas.toDataURL(), Math.random() * 1000000 + '.png');
+      });
+    });
+  }
+
+  function simulateDownloadImageClick(uri, filename) {
+    var link = document.createElement('a');
+    if (typeof link.download !== 'string') {
+      window.open(uri);
+    } else {
+      link.href = uri;
+      link.download = filename;
+      accountForFirefox(clickLink, link);
+    }
+  }
+
+  function clickLink(link) {
+    link.click();
+  }
+
+  function accountForFirefox(click) { // wrapper function
+    let link = arguments[1];
+    document.body.appendChild(link);
+    click(link);
+    document.body.removeChild(link);
+  }
+
+  var fileTag = document.getElementById("filetag"),
+    preview = document.getElementById("preview");
+
+  fileTag.addEventListener("change", function () {
+    changeImage(this);
+  });
+
+  function changeImage(input) {
+    var reader;
+
+    if (input.files && input.files[0]) {
+      reader = new FileReader();
+
+      reader.onload = function (e) {
+        preview.setAttribute('src', e.target.result);
+      }
+
+      reader.readAsDataURL(input.files[0]);
+      uploadphoto()
+    }
+
+    document.getElementById('uploadhide').style.display = "none";
+    document.getElementById('download').style.display = "block";
+  }
+
+
+  function uploadphoto() {
+
+    var file_data = $('#filetag').prop('files')[0];
+    var form_data = new FormData();
+    form_data.append('file', file_data);
+    form_data.append('id', "211");
+    $.ajax({
+      url: './uploadphoto.php', // <-- point to server-side PHP script 
+      dataType: 'text', // <-- what to expect back from the PHP script, if anything
+      cache: false,
+      contentType: false,
+      processData: false,
+      data: form_data,
+      type: 'post',
+      success: function (php_script_response) {
+      //   alert(php_script_response); // <-- display response from the PHP script, if any
+      }
+    })
+  }
+</script>
+  </body>
+</html>
